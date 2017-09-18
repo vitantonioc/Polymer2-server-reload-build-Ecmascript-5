@@ -46,7 +46,7 @@ Install [NPM - package.json]:
 
 ### Build ecmascript 5 and ecmascript 6 (bundled and unbundled)
 
-    npm run dev
+    npm run build
     
     After this command open "build" folder and copy the files for use
 
