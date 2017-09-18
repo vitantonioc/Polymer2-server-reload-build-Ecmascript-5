@@ -50,6 +50,10 @@ Install [NPM - package.json]:
     
     After this command open "build" folder and copy the files for use
 
+### Change root base
+In the bundle folder open index.html and change **<base href="/">** line, add new base root (ej. **<base href="/shop/">**)
+
+
 ### Build
 
 Build presets provide an easy way to define common build configurations in your `polymer.json` file. There are 2 build presets we put in `polymer.json` file in Shop:
