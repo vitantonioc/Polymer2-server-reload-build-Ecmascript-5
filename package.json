@@ -1,0 +1,19 @@
+{
+  "name": "Polymer2shopreload",
+  "version": "1.0.0",
+  "description": "Polymer 2 serve with browser-sync",  
+   "private": true,
+  "scripts": {
+    "start": "browser-sync start --server public -f public --serveStatic bower_components --no-notify",
+    "build": "polymer build"
+  },
+  "author": {
+    "name": "YourName",
+    "email": "xxxx@wxxxxxx.net",
+    "url": "YourWeb"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.18.13"
+  }
+}

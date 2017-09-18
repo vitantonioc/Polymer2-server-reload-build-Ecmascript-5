@@ -1,0 +1,36 @@
+{
+  "entrypoint": "public/index.html",
+  "shell": "public/src/shop-app.html",
+  "fragments": [
+    "public/src/shop-list.html",
+    "public/src/shop-detail.html",
+    "public/src/shop-cart.html",
+    "public/src/shop-checkout.html",
+    "public/src/lazy-resources.html"
+  ],
+  "sources": [
+    "public/src/**/*",
+    "public/data/**/*",
+    "public/images/**/*",
+    "bower.json"
+  ],
+  "extraDependencies": [
+    "app.yaml",
+    "manifest.json",
+    "public/bower_components/webcomponentsjs/*"
+  ],
+  "lint": {
+    "rules": ["polymer-2-hybrid"]
+  },
+  "builds": [
+    {
+      "preset": "es5-bundled"
+    },
+    {
+      "preset": "es6-unbundled"
+    },
+    {
+      "preset": "es6-bundled"
+    }
+  ]
+}
