@@ -3,7 +3,7 @@
 
 ##### Technical data
 This application use: the Polymer server for build, compile and bundled in  **es5-bundled** and **es6-bundled**
- and BrowserSync for loading any change. With old browsers (ej. IE11) isn't possible read Ecmascript 6 code, with this compiler is possible make a website for this browser and same time minify all files (javascript and html) 
+ and BrowserSync for loading any change. **With old browsers (ej. IE11) isn't possible read Ecmascript 6 code, with this compiler is possible make a website for this browser and same time minify all files (javascript and html)** 
 
 ##### Original app
 https://github.com/Polymer/shop
