@@ -51,7 +51,8 @@ Install [NPM - package.json]:
     After this command open "build" folder and copy the files for use
 
 ### Change root base
-In the bundle folder open index.html and change **<base href="/">** line, add new base root (ej. **<base href="/shop/">**)
+In the bundle folder open index.html and change **```<base href="/">```** line, add new base root (ej. **```<base href="/shop/">```**)
+
 
 
 ### Build
