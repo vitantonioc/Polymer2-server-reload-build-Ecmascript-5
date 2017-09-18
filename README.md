@@ -74,3 +74,13 @@ Build presets provide an easy way to define common build configurations in your 
 - addPushManifest: true
 - insertPrefetchLinks: true
 
+**es6-bundled**
+
+- js: {minify: true, compile: true}
+- css: {minify: true}
+- html: {minify: true}
+- bundle: true
+- addServiceWorker: true
+- addPushManifest: true
+- insertPrefetchLinks: true
+
