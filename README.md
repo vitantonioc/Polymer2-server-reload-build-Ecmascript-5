@@ -41,6 +41,8 @@ Install [NPM - package.json]:
 ### Start the development server
 
     npm run start
+    
+    Open browser to http://localhost:3000/ 
 
 ### Build ecmascript 5 and ecmascript 6 (bundled and unbundled)
 
