@@ -3,7 +3,7 @@
 
 ### Technical data
 This application use: the Polymer server for build, compile and bundled in  **es5-bundled** and **es6-bundled**
- and BrowserSync for loading any change. **With old browsers (ej. IE11) isn't possible read Ecmascript 6 code, with this compiler is possible make a website for these browser and same time minify all files (javascript and html)**.
+ and BrowserSync for loading any change. **With old browsers (ex. IE11) isn't possible read Ecmascript 6 code, with this compiler is possible make a website for these browser and same time minify all files (javascript and html)**.
 I changed the root for links for adapt the reload. 
 
 ##### Original app
@@ -51,7 +51,7 @@ Install [NPM - package.json]:
     After this command open "build" folder and copy the files for use
 
 ### Change root base
-In the bundle folder open index.html and change **```<base href="/">```** line, add new base root (ej. **```<base href="/shop/">```**)
+In the bundle folder open index.html and change **```<base href="/">```** line, add new base root (ex. **```<base href="/shop/">```**)
 
 
 
