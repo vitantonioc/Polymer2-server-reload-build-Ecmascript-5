@@ -73,7 +73,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           max-width: 50%;
         }
       }
-
+ 
     </style>
 
     <!--
@@ -181,7 +181,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         if (!quantity) {
           return '';
         }
-        let pluralizedQ = quantity === 1 ? 'item' : 'items';
+        var pluralizedQ = quantity === 1 ? 'item' : 'items';
         return  '(' + quantity + ' ' + pluralizedQ + ')';
       }
 
@@ -196,8 +196,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               this.dispatchEvent(new CustomEvent('change-section', {
                 bubbles: true, composed: true, detail: {
                   category: category.name,
-                  title: category.title,
-                  image: this.baseURI + category.image
+                  title: category.title
                 }}));
             } else {
               this.dispatchEvent(new CustomEvent('show-invalid-url-warning', {

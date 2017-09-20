@@ -7,6 +7,7 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
+
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/app-layout/app-header/app-header.html">
 <link rel="import" href="../bower_components/app-layout/app-scroll-effects/effects/waterfall.html">
@@ -60,7 +61,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       .logo {
-        text-align: center;
+        text-align: center;   
+       
       }
 
       .logo a {
@@ -114,6 +116,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       shop-tabs {
         height: 100%;
+        background: #4F8186;
       }
 
       shop-tab {
@@ -170,7 +173,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       app-drawer {
         z-index: 3;
       }
-
+     app-toolbar{
+      width: 100%;
+        height: 70px;
+        background: #080808;
+     }
+     .cart-btn-container{
+       margin-right:22px;
+     }
+     iron-icon{
+      color:white;
+     }
       iron-pages {
         max-width: 1440px;
         margin: 0 auto;
@@ -178,6 +191,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       footer {
         position: absolute;
+        background: black;     
         bottom: 0;
         left: 0;
         right: 0;
@@ -187,8 +201,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       footer > a {
-        color: var(--app-secondary-color);
+        color: white;
         text-decoration: none;
+
       }
 
       footer > a:hover {
@@ -219,10 +234,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           display: none;
         }
       }
+    .menutitle{
+      font-size: 18px!important;
+      color:white;
+    }
+     .menu-btn.shop-app{color:white!important;}
+     shop-tab a{
+       color:white;
+     }
 
     </style>
 
-    <!-- <shop-analytics key="UA-39334307-16"></shop-analytics> -->
+   <!-- <shop-analytics key="UA-39334307-16"></shop-analytics>-->
     <!--
       app-location and app-route elements provide the state of the URL for the app.
     -->
@@ -231,7 +254,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         route="{{route}}"
         pattern="/:page"
         data="{{routeData}}"
-        tail="{{subroute}}"></app-route>
+        tail="{{subroute}}" ></app-route>
 
     <iron-media-query query="max-width: 767px" query-matches="{{smallScreen}}"></iron-media-query>
 
@@ -260,13 +283,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               aria-label="Categories">
           </paper-icon-button>
           <a class="back-btn" href="#/list/[[categoryName]]" tabindex="-1">
-            <paper-icon-button icon="arrow-back" aria-label="Go back"></paper-icon-button>
+            <iron-icon icon="icons:arrow-back" aria-label="Go back"> </iron-icon>
           </a>
         </div>
-        <div class="logo" main-title><a href="#/" aria-label="SHOP Home">SHOP</a></div>
+        <div class="logo" main-title><a href="#/" aria-label="SHOP Home"><img src="images/shop.png" /></a>
+          </div>
         <div class="cart-btn-container">
           <a href="#/cart" tabindex="-1">
-            <paper-icon-button icon="shopping-cart" aria-label$="Shopping cart: [[_computePluralizedQuantity(numItems)]]"></paper-icon-button>
+          
+            <iron-icon icon="icons:add-shopping-cart" aria-label$="Shopping cart: [[_computePluralizedQuantity(numItems)]]"></iron-icon>
           </a>
           <div class="cart-badge" aria-hidden="true" hidden$="[[!numItems]]">[[numItems]]</div>
         </div>
@@ -282,7 +307,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <dom-repeat items="[[categories]]" as="category" initial-count="4">
                 <template>
                 <shop-tab name="[[category.name]]">
-                  <a href="#/list/[[category.name]]">[[category.title]]</a>
+                  <a href="#/list/[[category.name]]" class="menutitle" title="[[category.title]]">[[category.title]]</a>
                 </shop-tab>
                 </template>
               </dom-repeat>
@@ -298,6 +323,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <!-- Two-way bind `drawerOpened` since app-drawer can update `opened` itself. -->
       <app-drawer opened="{{drawerOpened}}" swipe-open tabindex="0">
         <iron-selector role="navigation" class="drawer-list" selected="[[categoryName]]" attr-for-selected="name">
+          <a name="" href="#/">Home</a>
           <dom-repeat items="[[categories]]" as="category" initial-count="4">
             <template>
               <a name="[[category.name]]" href="#/list/[[category.name]]">[[category.title]]</a>
@@ -324,8 +350,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </iron-pages>
 
     <footer>
-      <a href="https://www.polymer-project.org/1.0/toolbox/">Made by Polymer </a>
-      <div class="demo-label">Demo Only</div>
+      <a href="https://www.polymer-project.org/2.0/toolbox/">Made by Polymer</a>
     </footer>
 
     <!-- a11y announcer -->
@@ -415,7 +440,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           } else {
             // When a load failed, it triggered a 404 which means we need to
             // eagerly load the 404 page definition
-            let cb = this._pageLoaded.bind(this, Boolean(oldPage));
+            var cb = this._pageLoaded.bind(this, Boolean(oldPage));
             Polymer.importHref(
               this.resolveUrl('shop-' + page + '.html'),
               cb, cb, true);
@@ -451,7 +476,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       _notifyNetworkStatus() {
-        let oldOffline = this.offline;
+        var oldOffline = this.offline;
         this.offline =  !navigator.onLine;
         // Show the snackbar if the user is offline when starting a new session
         // or if the network status changed.
@@ -470,24 +495,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         this.drawerOpened = !this.drawerOpened;
       }
 
-      _setMeta(attrName, attrValue, content) {
-        let element = document.head.querySelector(`meta[${attrName}="${attrValue}"]`);
-        if (!element) {
-          element = document.createElement('meta');
-          element.setAttribute(attrName, attrValue);
-          document.head.appendChild(element);
-        }
-        element.setAttribute('content', content || '');
-      }
-
       // Elements in the app can notify section changes.
       // Response by a11y announcing the section and syncronizing the category.
       _onChangeSection(event) {
-        let detail = event.detail;
+        var detail = event.detail;
 
         // Scroll to the top of the page when navigating to a non-list page. For list view,
         // scroll to the last saved position only if the category has not changed.
-        let scrollTop = 0;
+        var scrollTop = 0;
         if (this.page === 'list') {
           if (this.categoryName === detail.category) {
             scrollTop = this._listScrollTop;
@@ -506,16 +521,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         if (detail.title) {
           document.title = detail.title + ' - SHOP';
           this._announce(detail.title + ', loaded');
-          // Set open graph metadata
-          this._setMeta('property', 'og:title', detail.title);
-          this._setMeta('property', 'og:description', detail.description || document.title);
-          this._setMeta('property', 'og:url', document.location.href);
-          this._setMeta('property', 'og:image', detail.image || this.baseURI + 'images/shop-icon-128.png');
-          // Set twitter card metadata
-          this._setMeta('property', 'twitter:title', detail.title);
-          this._setMeta('property', 'twitter:description', detail.description || document.title);
-          this._setMeta('property', 'twitter:url', document.location.href);
-          this._setMeta('property', 'twitter:image:src', detail.image || this.baseURI + 'images/shop-icon-128.png');
         }
       }
 
@@ -530,7 +535,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       _onSetCartItem(event) {
-        let detail = event.detail;
+        var detail = event.detail;
         this.$.cart.setItem(detail);
         if (detail.quantity === 0) {
           this._announce('Item deleted');
@@ -561,8 +566,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       // This is for performance logging only.
       _domChange(e) {
         if (window.performance && performance.mark && !this.__loggedDomChange) {
-          let target = e.composedPath()[0];
-          let host = target.getRootNode().host;
+          var target = e.composedPath()[0];
+          var host = target.getRootNode().host;
           if (host && host.localName.match(this.page)) {
             this.__loggedDomChange = true;
             performance.mark(host.localName + '.domChange');

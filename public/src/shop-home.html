@@ -44,23 +44,31 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         opacity: 1;
       }
 
+      [hidden]{
+        display:none;
+      }
+
       .item {
         display: block;
         text-decoration: none;
         text-align: center;
         margin-bottom: 40px;
       }
-
+      
+      .item:nth-of-type(2),
       .item:nth-of-type(3),
-      .item:nth-of-type(4) {
+      .item:nth-of-type(4),
+      .item:nth-of-type(5) {
         display: inline-block;
-        width: 50%;
+        width: 50%;   
       }
 
       shop-image {
-        position: relative;
-        height: 320px;
-        overflow: hidden;
+         max-width:90%;
+         margin-left:5%;
+         position: relative;
+         height: 320px;   
+         overflow: hidden;             
         --shop-image-img: {
           position: absolute;
           top: 0;
@@ -68,24 +76,36 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           left: -9999px;
           right: -9999px;
           max-width: none;
+          
         };
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
       }
 
       h2 {
-        font-size: 1.3em;
+        font-size: 1.8em;
         font-weight: 500;
         margin: 32px 0;
       }
 
-      .item:nth-of-type(3) > h2,
+      .item:nth-of-type(1) > h2,
+      .item:nth-of-type(2) > h2,
+      .item:nth-of-type(3) > h2 ,
       .item:nth-of-type(4) > h2 {
-        font-size: 1.1em;
+        font-size: 1.8em;
       }
 
       @media (max-width: 767px) {
         shop-image {
-          height: 240px;
+          height: 240px;           
         }
+
+        .item:nth-of-type(2),
+      .item:nth-of-type(3),
+      .item:nth-of-type(4),
+      .item:nth-of-type(5) {
+        display: inline-block;
+        width:100%;   
+      }
 
         h2 {
           margin: 24px 0;
@@ -96,7 +116,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           padding: 8px 24px;
         }
       }
-
+   
     </style>
 
     <dom-repeat items="[[categories]]">
@@ -105,10 +125,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <a class="image-link" href$="#/list/[[item.name]]">
             <shop-image src="[[item.image]]" alt="[[item.title]]" placeholder-img="[[item.placeholder]]"></shop-image>
           </a>
-          <h2>[[item.title]]</h2>
-          <shop-button>
+          <h2>[[item.title]]</h2>   
+          <template is="dom-if" if="[[!item.title]]">
+          <h1>Welcome to the shop!!</h1>
+          </template>           
+          <shop-button hidden$="[[!item.title]]">
             <a aria-label$="[[item.title]] Shop Now" href$="#/list/[[item.name]]">Shop Now</a>
           </shop-button>
+       
+
         </div>
       </template>
     </dom-repeat>
@@ -140,7 +165,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             bubbles: true, composed: true, detail: {title: 'Home'}}));
         }
       }
-
+      
     }
 
     customElements.define(ShopHome.is, ShopHome);

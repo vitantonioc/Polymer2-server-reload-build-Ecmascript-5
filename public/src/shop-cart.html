@@ -28,11 +28,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         text-align: right;
         margin-right: 10px;
       }
+      .main-frame.shop-cart {
+        max-width: 90%;
+      }
 
       .subtotal {
         margin: 0 64px 0 24px;
+        font-size: 22px;
       }
-
+      .empty-cart{
+        font-size: 22px;
+      }
       @media (max-width: 767px) {
 
         .subtotal {
@@ -45,7 +51,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <div class="main-frame">
       <div class="subsection" visible$="[[!_hasItems]]">
-        <p class="empty-cart">Your <iron-icon icon="shopping-cart"></iron-icon> is empty.</p>
+        <p class="empty-cart">Your <iron-icon icon="icons:add-shopping-cart"></iron-icon> is empty.</p>
       </div>
       <div class="subsection" visible$="[[_hasItems]]">
         <header>
@@ -56,6 +62,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <dom-repeat items="[[cart]]" as="entry">
             <template>
               <shop-cart-item entry="[[entry]]"></shop-cart-item>
+              <hr>
             </template>
           </dom-repeat>
         </div>
