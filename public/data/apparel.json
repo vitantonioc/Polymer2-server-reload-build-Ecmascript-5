@@ -1,0 +1,56 @@
+[
+  {
+    "name":"double_pocket",
+    "title":"Double Pocket Parka Long Winter",
+    "category":"Apparel",
+    "price":31.20,
+    "description":"Additional Purchase Deal: For any Item Total over €25.26, purchase 1 Special Promo Item for €5.89,€6.73,€7.57, Discounts are automatically applied to your shopping cart before checkout",
+    "image":"data/images/double_pocketA.jpg",
+    "largeImage":"data/images/double_pocketB.jpg"
+  },
+  {
+    "name":"satin_zip",
+    "title":"Satin Zip Up Bomber Jacket",
+    "category":"Apparel",
+    "price":14.15,
+    "description":"Additional Purchase Deal: For any Item Total over €25.26, purchase 1 Special Promo Item for €5.89,€6.73,€7.57, Discounts are automatically applied to your shopping cart before checkout.",
+    "image":"data/images/satin_zipA.jpg",
+    "largeImage":"data/images/satin_zipB.jpg"
+  },
+  {
+    "name":"trendy",
+    "title":"Trendy Geometric Color Block Wool Blend Loose Coat ",
+    "category":"Apparel",
+    "price":15.65,
+    "description":"Additional Purchase Deal: For any Item Total over €25.26, purchase 1 Special Promo Item for €5.89,€6.73,€7.57, Discounts are automatically applied to your shopping cart before checkout.",
+    "image":"data/images/trendyA.jpg",
+    "largeImage":"data/images/trendyB.jpg"
+  },
+  {
+    "name":"hooded",
+    "title":"Hooded Printed Quilted Coat",
+    "category":"Apparel",
+    "price":33.60,
+    "description":"Pack. Pack. Pack it up! This nylon jacket with reflective trim can literally be packed into itself in seconds. Features a waterproof nylon fabric, Android eyes &amp;amp; antennaes on the hood and a  carrying strap when jacket is fully packed. Android robot is printed on back above zipper in a reflective, metallic finish.",
+    "image":"data/images/hoodedA.jpg",
+    "largeImage":"data/images/hoodedB.jpg"
+  },
+  {
+    "name":"double",
+    "title":"Double Breasted Fit and Flare Coat ",
+    "category":"Apparel",
+    "price":32.35,
+    "description":"Stay warm in this cozy hoodie made of 50% cotton and 50% polyester. This comfortable design features set in sleeves, dyed to match draw cord and a front pouch pocket. Available in Charcoal with the full color YouTube logo screen printed across the chest. Unisex sizing.",
+    "image":"data/images/doubleA.jpg",
+    "largeImage":"data/images/doubleB.jpg"
+  },
+  {
+    "name":"striped",
+    "title":"Striped Zipper Design Bomber Jacket",
+    "category":"Apparel",
+    "price":38.85,
+    "description":"Cozy up with this full-zip hoodie.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Features:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;60% combed, ring-spun cotton, 40% polyester.&lt;/li&gt;&lt;li&gt;Unisex sizing.&lt;/li&gt;&lt;li&gt;Retail fit.&lt;/li&gt;&lt;li&gt;Contrast zipper.&lt;/li&gt;&lt;li&gt;Kangaroo pockets with ribbed cuffs and waistband.&lt;/li&gt;&lt;li&gt;Available in dark heather with the white Google logo embroidered at left chest.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;",
+    "image":"data/images/stripedA.jpg",
+    "largeImage":"data/images/stripedB.jpg"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "name":"female",
+    "title":"Female Analog Quartz Watch",
+    "category":"Watches",
+    "price":14.75,
+    "description":"For any Item Total over €50.27, purchase 1 Special Promo Item for €1.67, Item Total over €83.79, purchase 1 Special Promo Item for €8.37, Discounts are automatically applied to your shopping cart before checkout.",
+    "image":"data/images/femaleA.jpg",
+    "largeImage":"data/images/femaleB.jpg"
+  },
+  {
+    "name":"analog",
+    "title":"Female Analog Quartz Watch",
+    "category":"Watches",
+    "price":17.05,
+    "description":"For any Item Total over €50.27, purchase 1 Special Promo Item for €1.67, Item Total over €83.79, purchase 1 Special Promo Item for €8.37, Discounts are automatically applied to your shopping cart before checkout.",
+    "image":"data/images/analogA.jpg",
+    "largeImage":"data/images/analogB.jpg"
+  },
+  {
+    "name":"bracelet",
+    "title":"Xinhua 681 Bracelet Pattern Female Quartz Watch",
+    "category":"Watches",
+    "price":14.95,
+    "description":"For any Item Total over €50.27, purchase 1 Special Promo Item for €1.67, Item Total over €83.79, purchase 1 Special Promo Item for €8.37, Discounts are automatically applied to your shopping cart before checkout.",
+    "image":"data/images/braceletA.jpg",
+    "largeImage":"data/images/braceletB.jpg"
+  },
+  {
+    "name":"fashion",
+    "title":"Chaoyada Fashional Ladys Quartz Chain Watch",
+    "category":"Watches",
+    "price":15.8,
+    "description":"For any Item Total over €50.27, purchase 1 Special Promo Item for €1.67, Item Total over €83.79, purchase 1 Special Promo Item for €8.37, Discounts are automatically applied to your shopping cart before checkout.",
+    "image":"data/images/fashionA.jpg",
+    "largeImage":"data/images/fashionB.jpg"
+  },
+  {
+    "name":"daudy",
+    "title":"Daudy Black Dial Bracelet Wrist Watch",
+    "category":"Watches",
+    "price":16.9,
+    "description":"For any Item Total over €50.27, purchase 1 Special Promo Item for €1.67, Item Total over €83.79, purchase 1 Special Promo Item for €8.37, Discounts are automatically applied to your shopping cart before checkout.",
+    "image":"data/images/daudyA.jpg",
+    "largeImage":"data/images/daudyB.jpg"
+  },
+  {
+    "name":"women",
+    "title":"MILER A9001 Women Quartz Watch",
+    "category":"Watches",
+    "price":15.7,
+    "description":"For any Item Total over €50.27, purchase 1 Special Promo Item for €1.67, Item Total over €83.79, purchase 1 Special Promo Item for €8.37, Discounts are automatically applied to your shopping cart before checkout.",
+    "image":"data/images/womenA.jpg",
+    "largeImage":"data/images/womenB.jpg"
+  }
+]

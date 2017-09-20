@@ -1,0 +1,56 @@
+[
+  {
+    "name":"romantic",
+    "title":"Romantic Letter Love Heart Silver Plating Earrings ",
+    "category":"Jewelry",
+    "price":13.30,
+    "description":"For any Item Total over €50.27, purchase 1 Special Promo Item for €1.67, Item Total over €83.79, purchase 1 Special Promo Item for €8.37, Discounts are automatically applied to your shopping cart before checkout.",
+    "image":"data/images/romanticA.jpg",
+    "largeImage":"data/images/romanticB.jpg"
+  },
+  {
+    "name":"faux",
+    "title":"Faux Gem Hollowed Teardrop Jewelry Set",
+    "category":"Jewelry",
+    "price":18.35,
+    "description":"For any Item Total over €50.27, purchase 1 Special Promo Item for €1.67, Item Total over €83.79, purchase 1 Special Promo Item for €8.37, Discounts are automatically applied to your shopping cart before checkout.",
+    "image":"data/images/fauxA.jpg",
+    "largeImage":"data/images/fauxB.jpg"
+  },
+  {
+    "name":"ladies",
+    "title":"Ladies Zircon Crown Shape Stud Earrings",
+    "category":"Jewelry",
+    "price":16.40,
+    "description":"For any Item Total over €50.27, purchase 1 Special Promo Item for €1.67, Item Total over €83.79, purchase 1 Special Promo Item for €8.37, Discounts are automatically applied to your shopping cart before checkout.",
+    "image":"data/images/ladiesA.jpg",
+    "largeImage":"data/images/ladiesB.jpg"
+  },
+  {
+    "name":"pearl",
+    "title":"Ladies Double Pearls Stud Earrings",
+    "category":"Jewelry",
+    "price":13.30,
+    "description":"For any Item Total over €50.27, purchase 1 Special Promo Item for €1.67, Item Total over €83.79, purchase 1 Special Promo Item for €8.37, Discounts are automatically applied to your shopping cart before checkout.",
+    "image":"data/images/pearlA.jpg",
+    "largeImage":"data/images/pearlB.jpg"
+  },
+  {
+    "name":"zircon",
+    "title":"Zircon Necklace Fashion Jewelry",
+    "category":"Jewelry",
+    "price":19.10,
+    "description":"For any Item Total over €50.27, purchase 1 Special Promo Item for €1.67, Item Total over €83.79, purchase 1 Special Promo Item for €8.37, Discounts are automatically applied to your shopping cart before checkout.",
+    "image":"data/images/zirconA.jpg",
+    "largeImage":"data/images/zirconB.jpg"
+  },
+  {
+    "name":"owl",
+    "title":"Owl Design Hollow Out Rose Crystal Necklaces",
+    "category":"Jewelry",
+    "price":19.70,
+    "description":"For any Item Total over €50.27, purchase 1 Special Promo Item for €1.67, Item Total over €83.79, purchase 1 Special Promo Item for €8.37, Discounts are automatically applied to your shopping cart before checkout.",
+    "image":"data/images/owlA.jpg",
+    "largeImage":"data/images/owlB.jpg"
+  }
+]
