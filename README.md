@@ -9,7 +9,7 @@ I changed the root for links for adapt the reload.
 ##### Original app
 https://github.com/Polymer/shop
 
-##### This app (es5-bundle)
+##### Demo build with es5-bundle
 http://www.vitantonio.eu/web/shop/
 
 ### Setup
